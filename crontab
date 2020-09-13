@@ -1,2 +1,4 @@
-1 * * * * python ./cryptobot/main.py
+################ WIP - Need to create Docker cron job for currencies
+
+1 * * * * ./cryptobot/main.py
 # Mandatory blank line
