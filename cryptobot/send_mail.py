@@ -1,6 +1,6 @@
 import os
 
-SLACK_TOKEN= os.environ.get('SLACK_TOKEN')
+SLACK_TOKEN= str(os.environ.get('SLACK_TOKEN'))
 class SendMail():
 
     # Posting to a Slack channel
@@ -11,7 +11,7 @@ class SendMail():
         post = {"text": "{0}".format(text)}
         try:
             json_data = json.dumps(post)
-            req = request.Request("https://hooks.slack.com/services/TU4MJSYUE/BU4UJ281L/"+ SLACK_TOKEN,
+            req = request.Request("https://hooks.slack.com/services/TU4MJSYUE/BU4UJ281L/"+SLACK_TOKEN,
                                   data=json_data.encode('ascii'),
                                   headers={'Content-Type': 'application/json'})
             resp = request.urlopen(req)
