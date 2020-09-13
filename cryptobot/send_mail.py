@@ -1,3 +1,4 @@
+SLACK_TOKEN= os.environ.get('SLACK_TOKEN')
 class SendMail():
 
     # Posting to a Slack channel

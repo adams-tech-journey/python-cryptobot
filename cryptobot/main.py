@@ -3,7 +3,6 @@ import time
 from crypto_values import GetNowPrice, BoughtPrice, Total_Shares
 from send_mail import SendMail
 
-SLACK_TOKEN = 
 p1 = GetNowPrice()
 b1 = BoughtPrice(2.5)
 t1 = Total_Shares(25)
